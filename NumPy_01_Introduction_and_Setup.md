@@ -1,6 +1,5 @@
-# NumPy Training 
-
-## Session 01 – Introduction and Setup
+# NumPy
+## Session – Introduction and Setup
 
 ### 1. What is NumPy?
 
