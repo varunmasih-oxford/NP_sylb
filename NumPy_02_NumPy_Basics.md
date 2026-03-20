@@ -449,3 +449,45 @@ Create the matrix below and print the **second column**.
 ```
 
 ---
+```
+import numpy as np
+
+
+for row in arr:
+    for x in row:
+        print(x, end=" ")
+# Output: 1 2 3 4 
+
+
+for x in arr.flat:
+    print(x, end=" ")
+# Output: 1 2 3 4 
+
+
+# 1. COMBINING ARRAYS
+a = np.array([1, 2, 3])
+b = np.array([4, 5, 6])
+
+# Stacking: vstack (vertical) and hstack (horizontal)
+v_stack = np.vstack((a, b))  # Result: [[1,2,3], [4,5,6]]
+h_stack = np.hstack((a, b))  # Result: [1,2,3,4,5,6]
+
+# Concatenate along a specific axis (must be same dimensions)
+c = np.array([[1, 2], [3, 4]])
+d = np.array([[5, 6]])
+concat = np.concatenate((c, d), axis=0) # Adds d as a new row
+
+# 2. COPYING VS. VIEWING
+original = np.array([10, 20, 30])
+
+# Shallow Copy (View) - Shares memory
+view_arr = original.view()
+view_arr[0] = 99  # This ALSO changes 'original'
+
+# Deep Copy - Independent memory
+copy_arr = original.copy()
+copy_arr[1] = 88  # This does NOT change 'original'
+
+print(f"Original after mods: {original}") 
+# Output: [99, 20, 30] (Index 0 changed via view, Index 1 stayed 20)
+```
