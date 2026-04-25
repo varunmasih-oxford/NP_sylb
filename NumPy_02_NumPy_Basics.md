@@ -418,35 +418,138 @@ print("Lowest", np.min(marks))
 
 ---
 
-# Practice Exercises
+# NumPy Sessions 03–08
 
-## Exercise 1
+## Topic: Random Arrays, Indexing, Reshaping, Operations & Statistics
 
-Create an array using `arange()` from **1 to 20 with step 2**.
 
----
+## Part A: Random Arrays
 
-## Exercise 2
-
-Create a **3x3 matrix filled with 5** using `full()`.
-
----
-
-## Exercise 3
-
-Generate **5 random integers between 10 and 50**.
+1. Create a 1D array of 5 random float values using `rand()`.  
+2. Create a 3×3 matrix of random float values.  
+3. Generate a 1D array of 5 random integers between 1 and 100 using `randint()`.  
+4. Create a 1D array of 5 values from a normal distribution using `randn()`.
 
 ---
 
-## Exercise 4
+## Part B: Indexing and Slicing
 
-Create the matrix below and print the **second column**.
+5. Given the array:
+```python
+import numpy as np
 
+arr = np.array([10, 20, 30, 40, 50])
+````
+
+Perform the following:
+
+* Print the first and fourth element
+* Slice elements from index 1 to 3
+* Slice first three elements
+* Slice elements from index 2 to end
+
+---
+
+## Part C: Advanced Indexing
+
+6. Using the same array:
+
+* Access elements at index positions [0, 2, 4]
+* Print elements greater than 25 using boolean indexing
+* Use fancy indexing with index list [1, 3, 4]
+
+---
+
+## Part D: Multi-Dimensional Indexing
+
+7. Given the matrix:
+
+```python
+matrix = np.array([
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+])
 ```
-[[1,2,3]
- [4,5,6]
- [7,8,9]]
+
+Perform the following:
+
+* Access element at row 0, column 1
+* Print all elements of column 1
+* Slice a sub-matrix (first 2 rows, last 2 columns)
+
+---
+
+## Part E: Reshaping Arrays
+
+8. Create an array using `arange(12)` and:
+
+* Reshape it into a 3×4 matrix
+* Flatten the matrix using `flatten()`
+* Flatten the matrix using `ravel()`
+
+---
+
+## Part F: Mathematical Operations
+
+9. Given:
+
+```python
+arr = np.array([10, 20, 30])
 ```
+
+Perform:
+
+* Add 5 to each element
+* Multiply each element by 2
+* Square each element
+
+Also perform element-wise operations:
+
+```python
+a = np.array([1, 2, 3])
+b = np.array([4, 5, 6])
+```
+
+* Add arrays
+* Multiply arrays
+
+---
+
+## Part G: Statistical Functions
+
+10. Given:
+
+```python
+arr = np.array([10, 20, 30, 40, 50])
+```
+
+Calculate:
+
+* Mean
+* Median
+* Standard deviation
+* Sum
+* Minimum value
+* Maximum value
+
+---
+
+## Part H: Axis Operations
+
+11. Given:
+
+```python
+matrix = np.array([
+    [1, 2, 3],
+    [4, 5, 6]
+])
+```
+
+Perform:
+
+* Sum along columns (axis = 0)
+* Sum along rows (axis = 1)
 
 ---
 ```
