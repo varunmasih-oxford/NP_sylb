@@ -393,49 +393,64 @@ Output
 
 ---
 
-# Practice Exercises
+## Topic: Array Creation Methods & Analysis
 
-## Exercise 1
 
-Create a NumPy array containing:
+## Part A: Array Creation
 
-```
-[5,10,15,20,25]
-```
-
----
-
-## Exercise 2
-
-Create two arrays:
-
-```
-A = [2,4,6]
-B = [1,3,5]
-```
-
-Add them using NumPy.
-
-Expected Output
-
-```
-[3 7 11]
-```
+1. Create a 1D array of 10 zeros.  
+2. Create a 3×4 matrix of ones.  
+3. Generate an array of numbers from 1 to 20 using `arange()`.  
+4. Create an array of even numbers from 0 to 50.  
+5. Generate 6 evenly spaced values between 0 and 12 using `linspace()`.
 
 ---
 
-## Exercise 3
+## Part B: Random Arrays
 
-Create a NumPy array for temperatures:
-
-```
-[30,32,35,40,28]
-```
-
-Find:
-
-* Average temperature
-* Maximum temperature
+6. Create a 1D array of 8 random float values (0 to 1).  
+7. Generate a 4×4 matrix of random integers between 10 and 50.
 
 ---
+
+## Part C: Array Properties
+
+8. For the following array:
+
+```python
+import numpy as np
+
+arr = np.array([[10, 20, 30], [40, 50, 60]])
+````
+
+Print:
+
+* Shape
+* Number of dimensions
+* Total number of elements
+
+---
+
+## Part D: Operations and Analysis
+
+9. Create an array from 5 to 50 with step 5 and:
+
+* Print the array
+* Find its size
+* Check its dimensions
+
+---
+
+## Part E: Combining Arrays
+
+10. Create:
+
+* A 2×3 zero matrix
+* A 2×3 ones matrix
+
+Then:
+
+* Combine them row-wise
+* Print the final array
+* Display its shape and size
 
