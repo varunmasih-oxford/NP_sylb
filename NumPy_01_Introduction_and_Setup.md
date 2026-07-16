@@ -43,7 +43,23 @@ Output
 If NumPy is not installed:
 
 ```bash
-pip install numpy
+py -m venv [folder_name]
+- py -m venv venv
+
+[folder_name]\scripts\activate
+- venv\scripts\activate
+
+download and install files using PIP
+- pip install numpy
+
+check version
+in file
+-   import numpy as np
+-   print(np.__version__)
+
+in terminal
+-   pip show numpy
+
 ```
 
 Inside Jupyter Notebook:
