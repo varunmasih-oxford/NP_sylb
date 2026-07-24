@@ -49,6 +49,9 @@ py -m venv [folder_name]
 [folder_name]\scripts\activate
 - venv\scripts\activate
 
+Run this command if you get script disabled error only:
+- Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
 download and install files using PIP
 - pip install numpy
 
